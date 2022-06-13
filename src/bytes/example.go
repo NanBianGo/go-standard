@@ -173,6 +173,7 @@ func byteDemo() {
 	bytes.SplitAfterN(a, []byte(","), 2)
 
 	// 返回一个 以空格为界限，所有首个字母大写 的标题格式
+	// 已过时：标题用于单词边界的规则无法正确处理 Unicode 标点符号。请改用 golang.org/x/text/cases。
 	bytes.Title(a)
 
 	// 返回一个 所有字母大写 的标题格式
